@@ -58,7 +58,7 @@ void exibir_numero(PIO pio, uint sm, int numero){
         {1,1,1,1,1, 1,0,0,0,0, 1,1,1,1,1, 1,0,0,0,1, 1,1,1,1,1}  // 9
     };
 
-    //ENTENDER MELHOR ESSA PARTE
+    
     for (int i = 0; i < NUM_PIXELS; i++) {
         int mirrored_index = (i / 5) * 5 + (4 - (i % 5));
         pio_sm_put_blocking(pio, sm, matrix_rgb(numeros[numero][mirrored_index], numeros[numero][mirrored_index], numeros[numero][mirrored_index]));
