@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/contador.uf2'
+elf = 'build/contador.elf'
